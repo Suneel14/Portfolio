@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Patnana Suneel Kumar</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1{
+            color: #fff;
+        }
+        h2, h3 {
+            color: #c27818;
+        }
+        a {
+            text-decoration: none;
+            color: #4CAF50;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #388E3C;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, #4CAF50, #81C784);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+        }
+
+        /* Navigation Styles */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #222;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #4CAF50;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            font-size: 2.2rem;
+            border-bottom: 3px solid #4CAF50;
+            display: inline-block;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+        }
+
+        /* Skills Section */
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills ul li {
+            background: #f9f9f9;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #4CAF50;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Projects Section */
+        .project-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-item h3 {
+            margin-top: 0;
+        }
+
+        /* Education Section */
+        .education ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .education ul li {
+            background: #f9f9f9;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #4CAF50;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contact Section */
+        .contact-info {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info li {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        .contact-info a {
+            font-weight: bold;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: right;
+            padding: 20px;
+            background: #222;
+            color: white;
+            margin-top: 40px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Patnana Suneel Kumar</h1>
+        <p>Computer Science and Engineering Student | Problem Solver | Developer</p>
+    </header>
+    <nav>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Languages & Frameworks:</strong> Python, Java, C, HTML, CSS, JavaScript, SQL, NodeJS, React JS, Django</li>
+            <li><strong>Tools & Databases:</strong> GitHub, Snowflake, MongoDB, MySQL</li>
+            <li><strong>Soft Skills:</strong> Problem solving, Time Management, Adaptability</li>
+        </ul>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>CHAT IT</h3>
+            <p>Developed a WhatsApp-like platform using Node.js, React.js, and Socket.io, enabling real-time messaging, group chat, and supporting up to 1,000 users.</p>
+            <a href="https://github.com/Suneel14/ChatIt" target="_blank">View Project</a>
+        </div>
+        <div class="project-item">
+            <h3>Background Remover</h3>
+            <p>Built an image background removal application using Pillow, Streamlit, and remove.bg API for accurate background removal.</p>
+            <a href="https://github.com/Suneel14/background-remover" target="_blank">View Project</a>
+        </div>
+        <div class="project-item">
+            <h3>Movie Recommendation System</h3>
+            <p>Developed a movie recommendation system using the movie lens dataset, delivering personalized recommendations with 85% accuracy.</p>
+            <a href="https://github.com/Suneel14" target="_blank">View Project</a>
+        </div>
+    </section>
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>2021 - 2025:</strong> Bachelor of Technology in Computer Science and Engineering, Vishnu Institute of Technology (GPA: 8.8 ongoing)</li>
+            <li><strong>2019 - 2021:</strong> Class 12th, State Board at Sasi Junior College (Score: 972)</li>
+            <li><strong>2018 - 2019:</strong> Class 10th, Abhyudaya High School (GPA: 10)</li>
+        </ul>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <ul class="contact-info">
+            <li>Email: <a href="mailto:patnanasuneelkumar14@gmail.com">patnanasuneelkumar14@gmail.com</a></li>
+            <li>Phone: +91 9398250988</li>
+            <li>GitHub: <a href="https://github.com/Suneel14" target="_blank">github.com/Suneel14</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/patnana-suneel-kumar-763aa9278/" target="_blank">linkedin.com/in/patnana-suneel-kumar</a></li>
+        </ul>
+    </section>
+    <footer>
+        <p>Patnana Suneel Kumar</p>
+    </footer>
+</body>
+</html>
